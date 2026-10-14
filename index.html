@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IES Augustóbriga</title>
+    <meta name="description" content="Página web del IES Augustóbriga">
+    <!-- Corregido: "stylesheet" -->
+    <link rel="stylesheet" href="./css/tablas.css">
+</head>
+
+<body>
+    <header>
+        <!-- Corregido: "height" -->
+        <img src="./imagenes/Logotipo.jpeg" width="150" height="150" alt="Logotipo de IES Augustóbriga">
+        <h1>IES Augustóbriga</h1>
+    </header>
+    
+    <nav>
+        <a href="#noticias">Noticias</a>
+        <a href="#actividades">| Actividades</a>
+        <a href="https://www.educarex.es/fp.html" target="_blank" title="Portal de Educación">| Contacto</a>
+    </nav>
+
+    <main>
+        <table>
+            <caption>Referencias aplicadas a Don Quijote</caption>
+            <colgroup>
+                <col class="datos">
+                <col class="total">
+                <col class="comentario">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Partes</th>
+                    <th>Nombre</th>
+                    <th>Comentario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Primera</td>
+                    <td>Don Quijote de la Mancha</td>
+                    <td>Ideado por él mismo</td>
+                </tr>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Caballero de los Leones</td>
+                    <td>Apelativo creado por Don Quijote</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- Corregido: Ajustadas las columnas para sumar 3 en total -->
+                    <th colspan="2">Total referencias</th>
+                    <th>2</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <section id="noticias">
+            <h2>Noticias</h2>
+
+            <article id="Noticia1" class="noticia">
+                <h3>Arte en el súper</h3>
+                <p><strong>BRUSELAS: </strong> La cadena alemana de supermercados <mark>Aldi</mark> ha anunciado que comenzará a vender obras de arte oficiales creadas por la princesa Delphine de Bélgica. A partir de ahora, los clientes podrán meter en su carrito de la compra pinturas y diseños exclusivos de la realeza junto a los productos del día a día.</p>
+            </article>
+
+            <article id="Noticia2" class="noticia">
+                <h3>Menú de insectos</h3>
+                <p><strong>SINGAPUR:</strong> El gobierno de <mark>Singapur</mark> ha autorizado oficialmente el consumo y la comercialización de 16 especies de insectos para el consumo humano. La lista aprobada por las autoridades sanitarias incluye grillos, gusanos de seda y saltamontes, los cuales ya se pueden comprar en los mercados y pedir en los restaurantes locales.</p>
+            </article>
+            <!-- Corregido: Eliminada la etiqueta </article> duplicada que estaba aquí -->
+        </section>
+
+        <section id="actividades">
+            <h2>Actividades</h2>
+            <ul>
+                <li>Robótica</li>
+                <li>Teatro</li>
+                <li>Ajedrez</li>
+            </ul>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de Marcas para estructurar páginas web</dd>
+            </dl>
+        </section>
+    </main>
+
+    <!-- Corregido: La lista ordenada ahora está dentro del aside -->
+    <aside>
+        <h2>Próximos eventos</h2>
+        <ol>
+            <li>Puertas abiertas</li>
+            <li>Entrega de notas</li>
+            <li>Fiesta fin de curso</li>
+        </ol>
+        
+        <!-- Corregido: El horario se integró en la sección lateral por semántica -->
+        <details>
+            <summary>Horario de secretaría</summary>
+            <p>Lunes a viernes, de 9:00 a 14:00</p>
+        </details>
+    </aside>
+
+    <footer>
+        <p>Curso 2026-2027</p>
+        <address>
+            C. Antonio M' Concha, <br>
+            10300 Navalmoral de la Mata, <br>
+            Cáceres
+        </address>
+    </footer>
+</body>
+
+</html>
